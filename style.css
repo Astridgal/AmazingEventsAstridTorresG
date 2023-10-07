@@ -1,0 +1,49 @@
+header{
+    min-height: 10vh;
+    
+    
+}
+
+main{
+    min-height: 80vh;
+
+}
+   
+.slide img{
+    height: 35vh;
+}
+
+#Imag1Carrusel{
+   object-fit: cover; 
+}
+
+
+
+
+h1{
+    text-shadow: 5px 5px 0 gray;
+}
+
+.BotonesDetails{
+    background-color: #ff0066;
+    color: white;
+}
+
+.TituloDetails{
+    color: white;
+}
+.Formulario{
+font-size: x-large;
+color: white;
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.BotonSbmit{
+    background-color: #ff0066;
+    color: white;
+}
+
+footer{
+    min-height: 10vh;
+}

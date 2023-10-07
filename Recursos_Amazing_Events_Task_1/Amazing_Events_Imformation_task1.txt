@@ -1,3 +1,151 @@
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            
+            <div class="carousel-inner">
+              <div class=" divItem carousel-item active" data-bs-interval="3000">
+                <img src="./Recursos_Amazing_Events_Task_1/optional_banner_1.jpg" class="divImg d-block w-100 banner-image img-fluid" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h1>HOME</h1>
+                </div>
+              </div>
+              <div class=" carousel-item" data-bs-interval="3000">
+                <img src="./Recursos_Amazing_Events_Task_1/optional_banner_2.jpg" class="  d-block w-100 banner-image img-fluid" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h1>HOME</h1>
+                </div>
+              </div>
+              <div class=" carousel-item" data-bs-interval="3000">
+                <img src="./Recursos_Amazing_Events_Task_1/optional_banner_3.jpg" class=" d-block w-100 banner-image img-fluid" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h1>HOME</h1>
+                </div>
+              </div>
+              <div class=" carousel-item" data-bs-interval="3000">
+                <img src="./Recursos_Amazing_Events_Task_1/optional_banner_4.jpg" class="d-block w-100 banner-image img-fluid" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h1>HOME</h1>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="3000">
+                <img src="./Recursos_Amazing_Events_Task_1/optional_banner_5.jpg" class="d-block w-100 banner-image img-fluid" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h1>HOME</h1>
+                </div>
+              </div>
+           
+
+d-flex justify-content-center align-content-center object-fit-cover
+
+.divItem{
+    height: 200px;
+}
+
+.divImg{
+    height: 200px;
+    object-fit: cover;
+}
+
+.slide img{
+    height: 200px;
+}
+
+.divImg{
+    height: 80px;
+    
+
+"d-flex justify-content-center p-2 mb-4 gap-3 flex-wrap"
+id="BotonesDetails" 
+
+<div class="maps-form">
+
+    <div class="maps">
+        <p>Our location is located at:</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d423284.0441996482!2d-118.74139442737922!3d34.02060844920715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c75ddc27da13%3A0xe22fdf6f254608f4!2sLos%20%C3%81ngeles%2C%20California%2C%20EE.%20UU.!5e0!3m2!1ses!2sco!4v1695334834515!5m2!1ses!2sco" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></iframe>
+    </div>
+
+        <form action="show_data.html" method="get">
+            <fieldset class="form">
+        <label for="name">First Name</label> 
+        <input type="text" name="name" id="name">
+
+        <label for="LastName">Last Name</label>
+        <input type="text" name="LastName" id="LastName">
+
+        <label for="meet-zoom">Choose Meet or Zoom</label>
+        <select name="meet-zoom" id="meet-zoom">
+        <option value=""></option>
+        <option value="Meet">Meet</option>
+        <option value="Zoom">Zoom</option>
+    </select>
+
+        <label for="Date">Choose Date</label>
+        <input type="date" name="Date" id="Date">
+
+        <label for="Payment">Payment options</label>
+        <br>
+
+        <div class="cash">
+        <input type="radio" id="Cash" name="Payment" value="Cash">
+        <label for="Cash">Cash</label>
+    </div>
+    <br>
+
+    <div class="credit">
+        <input type="radio" id="Creditcard" name="Payment" value="Creditcard">
+        <label for="Creditcard">Credit Card</label>
+    </div>
+<br>
+       <div class="Debit">
+<input type="radio" id="Debitcard" name="Payment">
+        <label for="Debitcard">Debit Card</label>
+    </div>
+    <br>
+
+   <div>
+    <legend for="message">Message (optional) </legend>
+    <textarea name="message" id="message"></textarea>
+</div>
+<br>
+   <div class="accept">
+   <input type="checkbox" name="accept" id="accept">
+   <label for="accept">I accept terms and conditions...</label>
+
+   <input type="submit" value="send" class="submit">
+</div>
+
+
+Tabla
+<table>
+            <caption>Showy Cream</caption>
+            <thead>
+                <tr>
+                    <th>Elements</th>
+                   <th>Schedule</th>
+                    <th>Date</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>IceCream</td>
+                    <td>2:00 P.M</td>
+                    <td>20/10</td>
+                </tr>
+
+                <tr>
+                    <td>IceCream Cone</td>
+                    <td>4:00 P.M</td>
+                    <td>27/10</td>
+                </tr>
+
+                <tr>
+                    <td>IceCream Sauce</td>
+                    <td>10:00 P.M</td>
+                    <td>21/11</td>
+                </tr>
+            </tbody>
+        </table>
+
+
  "events": [
     {
       "_id": 1,
