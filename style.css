@@ -42,7 +42,22 @@ font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 .BotonSbmit{
     background-color: #ff0066;
     color: white;
+
 }
+
+.tablaStats{
+    width: 80vw;
+    border: #ff0066 2px solid;
+    font-size: 1.5rem;
+    
+
+}
+th,td{
+    border: #ff0066 2px solid;
+    height: 2rem;
+}
+
+
 
 footer{
     min-height: 10vh;

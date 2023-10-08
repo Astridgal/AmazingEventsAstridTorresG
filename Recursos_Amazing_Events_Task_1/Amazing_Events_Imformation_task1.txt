@@ -112,6 +112,18 @@ id="BotonesDetails"
    <input type="submit" value="send" class="submit">
 </div>
 
+Events with highest % of assistance
+Events with lowest % of assistance
+Events with larger capacity
+
+Upcoming events statistics by category
+Categories
+Revenues
+Percentaje of assitance
+
+Past events statistics by category
+
+margin: 3rem 8rem 3rem 8rem;
 
 Tabla
 <table>
