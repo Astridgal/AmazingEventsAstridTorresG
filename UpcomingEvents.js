@@ -1,9 +1,9 @@
-
-
 const contenedor = document.getElementById("ContenedorCards")
 const events = data.events
 
-for(let Cards of events){
+
+for (let Cards of events){
+    if(Cards.date >= "2023-01-01"){
 
 
 const card1 = document.createElement("div")
@@ -23,5 +23,4 @@ card1.innerHTML = `<img src="${Cards.image}" class="card-img-top" height="191" a
 
 contenedor.appendChild(card1)
 
-}
-
+}}
