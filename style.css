@@ -4,11 +4,12 @@ header{
     
 }
 
-main{
+/* main{
     min-height: 80vh;
 
-}
+} */
    
+
 .slide img{
     height: 35vh;
 }
@@ -22,6 +23,14 @@ main{
 
 h1{
     text-shadow: 5px 5px 0 gray;
+}
+
+#ContenedorCards{
+    width: 100vw;
+}
+
+.card{
+    width: 18rem;
 }
 
 .BotonesDetails{
@@ -65,10 +74,7 @@ footer{
 
 
 
-#ContenedorCards{
-    width: 18rem;
-   
-}
+
 
 
 

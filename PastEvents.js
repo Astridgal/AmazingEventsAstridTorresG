@@ -1,9 +1,10 @@
 const contenedor = document.getElementById("ContenedorCards")
 const events = data.events
+const fecha = data.currentDate
 
 
 for (let Cards of events){
-    if(Cards.date <= "2023-01-01"){
+    if(Cards.date <= fecha){
 
 
 const card1 = document.createElement("div")
