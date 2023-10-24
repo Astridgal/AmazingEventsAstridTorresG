@@ -4,10 +4,10 @@ header{
     
 }
 
-/* main{
+main{
     min-height: 80vh;
 
-} */
+} 
    
 
 .slide img{
@@ -31,6 +31,27 @@ h1{
 
 .card{
     width: 18rem;
+    height: 25rem;
+}
+
+.cardDetails{
+    width: 80rem;
+    height: 30rem;
+}
+
+.cardImge{
+    width: 40rem;
+    height: 30rem;
+}
+
+
+
+.row {
+    --bs-gutter-x: 0;
+}
+
+.texto{
+    font-size: 1.8rem;
 }
 
 .BotonesDetails{
@@ -40,6 +61,9 @@ h1{
 
 .TituloDetails{
     color: white;
+    width: 30rem;
+    font-size:xx-large;
+    margin-left: 4rem;
 }
 .Formulario{
 font-size: x-large;
