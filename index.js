@@ -1,15 +1,58 @@
 const contCheckbox = document.getElementById("contenedorCheckbox")
-const eventos = data.events
+const categorias1 = data.events
 
-for(let Check of eventos){
+const categorias = categorias1.map (categoria => categoria.category)
+// console.log(categorias);
+
+const categoriasSinDuplicado = [... new Set (categorias) ];
+// console.log(categoriasSinDuplicado);
+
+
+const arrayCategorias= Array.from(categoriasSinDuplicado)
+
+function checkCategory(checkCategory) {
+for(let category of checkCategory){
 const checkbox = document.createElement("div")
 checkbox.classList.add("form-check")
-checkbox.innerHTML = `<input class="form-check-input" type="checkbox" value="" id="category1">
-<label class="form-check-label" for="category1">${Check.category}</label>
+checkbox.innerHTML = `<input class="form-check-input" type="checkbox" value="${category}" id="${category}">
+<label class="form-check-label" for="${category}">${category}</label>
 `
 contCheckbox.appendChild(checkbox)
 }
+}
+checkCategory(arrayCategorias)
 
+
+// Escuchar evento
+
+contCheckbox.addEventListener("change", filtrar)
+function filtrar(arrayFiltrados){
+  const chequeados = document.querySelectorAll
+  ("input[type=checkbox]:checked")
+  const arrayChequeados = Array.from(chequeados)
+
+  const arrayNuevo = arrayChequeados.map(checked => checked.value)
+
+  console.log(arrayNuevo);
+}
+
+// Filtrado
+
+let checksFilrados =[]
+arrayFiltrados.forEach(check => {
+  arrayNuevo.forEach(categoria => {
+    if (categoria == check.category) {
+      
+    }
+  })
+});
+
+
+
+
+
+
+//cards
 
 const events = data.events
 const contenedor = document.getElementById("ContenedorCards")
