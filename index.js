@@ -1,65 +1,86 @@
 const contCheckbox = document.getElementById("contenedorCheckbox")
 const categorias1 = data.events
 
-const categorias = categorias1.map (categoria => categoria.category)
-// console.log(categorias);
+let arrayCategorias = []
 
-const categoriasSinDuplicado = [... new Set (categorias) ];
-// console.log(categoriasSinDuplicado);
+arrayCategorias = Array.from(new Set(categorias1.map(categoria => categoria.category)))
 
 
-const arrayCategorias= Array.from(categoriasSinDuplicado)
+//pintar checkbox
 
-function checkCategory(checkCategory) {
-for(let category of checkCategory){
-const checkbox = document.createElement("div")
-checkbox.classList.add("form-check")
-checkbox.innerHTML = `<input class="form-check-input" type="checkbox" value="${category}" id="${category}">
-<label class="form-check-label" for="${category}">${category}</label>
-`
-contCheckbox.appendChild(checkbox)
+function checkCategory(catCheck){
+catCheck.forEach(category => {
+  const checkbox = document.createElement("div")
+  checkbox.classList.add("form-check")
+  checkbox.innerHTML = `<input class="form-check-input" type="checkbox" value="${category}" id="${category}">
+  <label class="form-check-label" for="${category}">${category}</label>
+  `
+  contCheckbox.appendChild(checkbox)
+}) 
 }
-}
+
+
+
 checkCategory(arrayCategorias)
 
 
 // Escuchar evento
 
-contCheckbox.addEventListener("change", filtrar)
-function filtrar(arrayFiltrados){
-  const chequeados = document.querySelectorAll
-  ("input[type=checkbox]:checked")
-  const arrayChequeados = Array.from(chequeados)
+contCheckbox.addEventListener("change", () => {
 
-  const arrayNuevo = arrayChequeados.map(checked => checked.value)
+  superFiltro(categorias1)
+})
 
-  console.log(arrayNuevo);
+function filtrar(arrayCartas){
+  const chequeados = Array.from(document.querySelectorAll
+  ("input[type=checkbox]:checked")).map(checkbox => checkbox.value)
+  
+
+  let filtrados = []
+
+  arrayCartas.forEach(checked =>{
+    chequeados.forEach(categoria => {
+      if (categoria == checked.category) {
+        filtrados.push(checked)
+      }
+    })
+  })
+  if(filtrados.length == 0){
+    filtrados = arrayCartas
+  }
+  console.log(arrayCartas);
+  console.log(filtrados);
+return filtrados
 }
 
-// Filtrado
+function filtroTexto(arrayCartas){
+  return arrayCartas.filter(categoria => categoria.category.toLowerCase().includes(buscador.value.toLowerCase()))
+}
 
-let checksFilrados =[]
-arrayFiltrados.forEach(check => {
-  arrayNuevo.forEach(categoria => {
-    if (categoria == check.category) {
-      
-    }
-  })
-});
+buscador.addEventListener("keyup",()=>{
 
+  superFiltro(categorias1)
+})
 
-
-
+function superFiltro(arrayCartas){
+  let filtro = filtrar(categorias1)
+  let filtro2 = filtroTexto(filtro)
+  crearCard(filtro2)
+}
 
 
 //cards
 
-const events = data.events
+
 const contenedor = document.getElementById("ContenedorCards")
 
 
-
-for(let Cards of events){
+function crearCard(arrayCartas){
+  if(arrayCartas.length == 0){
+    contenedor.innerHTML = "<h2>Category not found</h2>"
+  } else{
+contenedor.innerHTML = ""
+for(let Cards of arrayCartas){
 const card1 = document.createElement("div")
 card1.classList.add("card")
 card1.innerHTML = `<img src="${Cards.image}" class="card-img-top cardImg" height="191" alt="...">
@@ -74,5 +95,8 @@ card1.innerHTML = `<img src="${Cards.image}" class="card-img-top cardImg" height
 
 contenedor.appendChild(card1)
 
-}
+}}}
+ crearCard(categorias1)
+
+
 
